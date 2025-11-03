@@ -1,0 +1,93 @@
+[
+  {
+    "round": 1,
+    "type": "Regular",
+    "course": "Morningstar Golfers Club",
+    "start": "2026-04-06",
+    "end": "2026-04-19"
+  },
+  {
+    "round": 2,
+    "type": "Regular",
+    "course": "Washington County Golf Course",
+    "start": "2026-04-20",
+    "end": "2026-05-03"
+  },
+  {
+    "round": 3,
+    "type": "Regular",
+    "course": "Brown Deer Park Golf Course",
+    "start": "2026-05-04",
+    "end": "2026-05-17"
+  },
+  {
+    "round": 4,
+    "type": "Regular",
+    "course": "The Bull at Pinehurst Farms",
+    "start": "2026-05-18",
+    "end": "2026-05-31"
+  },
+  {
+    "round": 5,
+    "type": "Regular",
+    "course": "Hawk\u2019s View Golf Club",
+    "start": "2026-06-01",
+    "end": "2026-06-14"
+  },
+  {
+    "round": 6,
+    "type": "Regular",
+    "course": "Naga-Waukee War Memorial",
+    "start": "2026-06-15",
+    "end": "2026-06-28"
+  },
+  {
+    "round": 7,
+    "type": "Regular",
+    "course": "Club at Lac La Belle",
+    "start": "2026-06-29",
+    "end": "2026-07-12"
+  },
+  {
+    "round": 8,
+    "type": "Regular",
+    "course": "Geneva National \u2013 Palmer",
+    "start": "2026-07-13",
+    "end": "2026-07-26"
+  },
+  {
+    "round": 9,
+    "type": "Regular",
+    "course": "Broadlands Golf Club",
+    "start": "2026-07-27",
+    "end": "2026-08-09"
+  },
+  {
+    "round": 10,
+    "type": "Regular",
+    "course": "The Bog",
+    "start": "2026-08-10",
+    "end": "2026-08-23"
+  },
+  {
+    "round": null,
+    "type": "Scramble",
+    "course": "TBD",
+    "start": "TBD",
+    "end": "TBD"
+  },
+  {
+    "round": null,
+    "type": "Par 3 Challenge",
+    "course": "Barn Hollow (Lac La Belle) \u2013 TBD",
+    "start": "TBD",
+    "end": "TBD"
+  },
+  {
+    "round": "Championship",
+    "type": "Championship",
+    "course": "University Ridge",
+    "start": "2026-08-31",
+    "end": "2026-09-13"
+  }
+]

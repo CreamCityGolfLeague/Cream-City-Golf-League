@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cream City Golf League</title>
+  <meta name="description" content="Cream City Golf League — Golf. Competition. Community." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div id="globalSpinner" class="spinner-overlay visible"><div class="spinner-ring"></div></div>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a href="#home" class="logo">
+        <img class="logo-img" src="./logo.png" alt="Cream City Golf League logo" />
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#rules">Rules</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#leaderboard">Leaderboard</a></li>
+        <li><a href="#join">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero reveal">
+    <div class="hero-inner">
+      <h1 class="hero-title">Cream City Golf League</h1>
+      <p class="tagline">Golf. Competition. Community.</p>
+      <div class="hero-ctas">
+        <a href="#schedule" class="btn btn-primary">View Schedule</a>
+        <a href="#join" class="btn btn-outline">Join Now</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="schedule" class="section reveal">
+    <h2>2026 Schedule</h2>
+    <p>Each round is a two-week window starting Monday. Par 3 Challenge and the midseason Scramble are special events with TBD dates. The Championship is at <strong>University Ridge</strong>.</p>
+    <div class="inline-spinner" id="scheduleSpin"><div class="spinner-ring small"></div></div>
+    <div id="scheduleTable" class="table-wrap" aria-busy="true"></div>
+  </section>
+
+  <section id="rules" class="section reveal">
+    <h2>Rules & Structure</h2>
+    <div class="accordion">
+      <details open>
+        <summary>League Overview</summary>
+        <ul>
+          <li>Season: April–September 2026</li>
+          <li>Events: 10 Individual Events + 1 Scramble + 1 Par 3 Special + 1 Championship</li>
+          <li>Rotating courses for variety and challenge</li>
+        </ul>
+      </details>
+      <details>
+        <summary>Event Types</summary>
+        <ul>
+          <li><strong>Individual:</strong> Stroke play using net scores (GHIN-based handicaps)</li>
+          <li><strong>Midseason Scramble:</strong> Four-person scramble; does not affect individual standings</li>
+          <li><strong>Par 3 Challenge:</strong> Full month to play a designated Par 3; best net score counts</li>
+          <li><strong>Championship:</strong> Double points</li>
+        </ul>
+      </details>
+      <details>
+        <summary>Handicaps & Flights</summary>
+        <ul>
+          <li>Maintain a GHIN Index; otherwise, app-based handicap after 3 rounds</li>
+          <li>Flights (by index): A (0.0–6.9), B (7.0–12.9), C (13.0–18.9), D (19.0+)</li>
+          <li>Monthly review for flight adjustments</li>
+        </ul>
+      </details>
+      <details>
+        <summary>Scoring & Points</summary>
+        <ul>
+          <li>Points awarded per placement within each flight (1,000 total per round)</li>
+          <li>Attendance earns minimum points; Championship awards double points</li>
+        </ul>
+      </details>
+      <details>
+        <summary>Payouts</summary>
+        <ul>
+          <li>Per flight: 1st Net, 2nd Net, Low Gross</li>
+          <li>Ties broken via USGA methods; digital gift card payouts</li>
+        </ul>
+      </details>
+      <details>
+        <summary>Rules of Play</summary>
+        <ul>
+          <li>USGA rules + local rules apply; all putts holed</li>
+          <li>Tees: A/B/C ~6,500 yds; D plays next set below; 55+ may use senior tees</li>
+          <li>Players cannot play with someone more than 3 times (unless in a foursome)</li>
+        </ul>
+      </details>
+      <details>
+        <summary>Administration</summary>
+        <ul>
+          <li>Apps: Unknown Golf or 18Birdies for scoring and handicaps</li>
+          <li>Transparent costs; Venmo for payments; reminders before each window</li>
+        </ul>
+      </details>
+    </div>
+  </section>
+
+  <section id="courses" class="section reveal">
+    <h2>Courses</h2>
+    <div class="course-grid">
+      <article class="course-card"><img alt="Morningstar Golfers Club" src="./morningstar.jpg"/><div class="card-body"><h3>Morningstar Golfers Club</h3><p>Challenging layout with pristine greens.</p></div></article>
+      <article class="course-card"><img alt="Washington County Golf Course" src="./washington.jpg"/><div class="card-body"><h3>Washington County Golf Course</h3><p>Links-style feel with wind in play.</p></div></article>
+      <article class="course-card"><img alt="Brown Deer Park Golf Course" src="./brown-deer.jpg"/><div class="card-body"><h3>Brown Deer Park Golf Course</h3><p>Historic parkland design.</p></div></article>
+      <article class="course-card"><img alt="The Bull at Pinehurst Farms" src="./the-bull.jpg"/><div class="card-body"><h3>The Bull at Pinehurst Farms</h3><p>Top-ranked Jack Nicklaus design.</p></div></article>
+      <article class="course-card"><img alt="Hawk’s View Golf Club" src="./hawks-view.jpg"/><div class="card-body"><h3>Hawk’s View Golf Club</h3><p>Como Crossings signature holes.</p></div></article>
+      <article class="course-card"><img alt="Naga-Waukee War Memorial" src="./naga-waukee.jpg"/><div class="card-body"><h3>Naga-Waukee War Memorial</h3><p>Glacial terrain with lake views.</p></div></article>
+      <article class="course-card"><img alt="Club at Lac La Belle" src="./lac-la-belle.jpg"/><div class="card-body"><h3>Club at Lac La Belle</h3><p>Restored classic with bold greens.</p></div></article>
+      <article class="course-card"><img alt="Geneva National – Palmer" src="./geneva-palmer.jpg"/><div class="card-body"><h3>Geneva National – Palmer</h3><p>Signature holes along the lake.</p></div></article>
+      <article class="course-card"><img alt="Broadlands Golf Club" src="./broadlands.jpg"/><div class="card-body"><h3>Broadlands Golf Club</h3><p>Playable but rewards great shots.</p></div></article>
+      <article class="course-card"><img alt="The Bog" src="./the-bog.jpg"/><div class="card-body"><h3>The Bog</h3><p>A strategic Arnold Palmer test.</p></div></article>
+    </div>
+  </section>
+
+  <section id="leaderboard" class="section reveal">
+    <h2>Leaderboard</h2>
+    <p>Coming soon — will integrate Unknown Golf or 18Birdies results here.</p>
+  </section>
+
+  <section id="join" class="section reveal">
+    <h2>Join / Contact</h2>
+    <p>Interested in joining the league or sponsoring an event? Reach out below.</p>
+    <div class="contact-cards">
+      <a class="card" href="mailto:info@creamcitygolfleague.com">
+        <h3>Email</h3>
+        <p>info@creamcitygolfleague.com</p>
+      </a>
+      <a class="card" href="https://forms.gle/" target="_blank" rel="noopener">
+        <h3>Join Form</h3>
+        <p>Google Form (link placeholder)</p>
+      </a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>© 2026 Cream City Golf League • Milwaukee, WI</p>
+    <p class="subtle">Golf. Competition. Community.</p>
+  </footer>
+
+  <button id="toTop" class="to-top" aria-label="Scroll to top">▲</button>
+
+  <script src="./script.js"></script>
+</body>
+</html>
